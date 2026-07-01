@@ -105,7 +105,7 @@ jobs:
           CMD="python3 build.py --version ${{ inputs.frida_version }}"
           CMD="$CMD --name ${{ inputs.custom_name }}"
           CMD="$CMD --arch ${{ inputs.arch }}"
-          CMD="$CMD --skip-clone --ndk-path build/android-ndk-r29"
+          CMD="$CMD --skip-clone --ndk-path build/android-ndk-r25"
           CMD="$CMD --verify"
 
           if [ -n "${{ inputs.port }}" ]; then
